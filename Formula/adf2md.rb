@@ -5,21 +5,21 @@
 class Adf2md < Formula
   desc "A Go command-line tool to convert Atlassian Document Format (ADF) JSON into Markdown."
   homepage ""
-  version "0.1.5"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/carylee/adf2md/releases/download/v0.1.5/adf2md_Darwin_x86_64.tar.gz"
-      sha256 "8f298b3fe36ecb8224558e005100b945117bc517ebe96c114e0f38167b2add72"
+      url "https://github.com/carylee/adf2md/releases/download/v0.2.0/adf2md_Darwin_x86_64.tar.gz"
+      sha256 "961272530a23c2dfb0092a1dc51c4907ac5c8b8f2e36a5a79362853a5c368d1c"
 
       def install
         bin.install "adf2md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/carylee/adf2md/releases/download/v0.1.5/adf2md_Darwin_arm64.tar.gz"
-      sha256 "cf2020ccc32bddbf9f811f61ba45f465de306e89cb16acb10e2172254b462f97"
+      url "https://github.com/carylee/adf2md/releases/download/v0.2.0/adf2md_Darwin_arm64.tar.gz"
+      sha256 "2283efd9704fa1b79f722d3ca59f8e4b701923bc4e9279a970c0d5398f45f39d"
 
       def install
         bin.install "adf2md"
@@ -29,15 +29,15 @@ class Adf2md < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/carylee/adf2md/releases/download/v0.1.5/adf2md_Linux_x86_64.tar.gz"
-      sha256 "67f5bca38d9d4cc85b0d0867cbd9b70ca874644855bb0dd494e1bd19207daa32"
+      url "https://github.com/carylee/adf2md/releases/download/v0.2.0/adf2md_Linux_x86_64.tar.gz"
+      sha256 "0ceeef3dd9317be520db418ca439b2edbd80182f49e010076bd400f7260a58e8"
       def install
         bin.install "adf2md"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/carylee/adf2md/releases/download/v0.1.5/adf2md_Linux_arm64.tar.gz"
-      sha256 "dca81cf113fa59cafbc4b3f5e2b2fa00cf3cc29b97fce1908db0e7be56dcc2e7"
+      url "https://github.com/carylee/adf2md/releases/download/v0.2.0/adf2md_Linux_arm64.tar.gz"
+      sha256 "afa13cb200b5f36b30032f131b4664cfb7a2e1fdee535dde23fc1344e8471b19"
       def install
         bin.install "adf2md"
       end
